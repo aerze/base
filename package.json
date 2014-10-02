@@ -1,0 +1,36 @@
+{
+  "name": "base",
+  "version": "0.0.1",
+  "description": "base ingredients for express server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aerze/base.git\\"
+  },
+  "keywords": [
+    "base",
+    "express",
+    "node"
+  ],
+  "author": "Gustavo Suarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aerze/base.git\\/issues"
+  },
+  "homepage": "https://github.com/aerze/base.git\\",
+  "dependencies": {
+    "express": "^4.9.5",
+    "body-parser": "^1.9.0",
+    "cookie-parser": "^1.3.3",
+    "morgan": "^1.3.2",
+    "ejs": "^1.0.0",
+    "less-middleware": "^1.0.4",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
