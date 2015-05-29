@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>Sunrun Web to Lead Form</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of       HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+
+
+<form class="pure-form pure-form-aligned" action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name="oid" value="00Dg0000003NCcC">
+<input type=hidden name="retURL" value="http://www.sunrun.com/">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+      <input type="hidden" name="debug" value=1>                              
+      <input type="hidden" name="debugEmail"                                  
+      value="sravanthi.gillala@sunrun.com">                                       
+<!--  ----------------------------------------------------------------------  -->
+
+
+<div class="pure-control-group">
+    <label for="first_name">First Name:</label>
+    <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required=true/><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="last_name">Last Name:</label>
+    <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required=true/><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="street">Street:</label>
+    <textarea id="street" name="street" required=true></textarea><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="city">City:</label>
+    <input  id="city" maxlength="40" name="city" size="20" type="text" required=true /><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000002YYwp">State:</label>
+    <select  id="00N60000002YYwp" name="00N60000002YYwp" title="State" required=true >
+        <option value="">--None--</option>
+        <option value="AK">AK</option>
+        <option value="AL">AL</option>
+        <option value="AR">AR</option>
+        <option value="AS">AS</option>
+        <option value="AZ">AZ</option>
+        <option value="CA">CA</option>
+        <option value="CO">CO</option>
+        <option value="CT">CT</option>
+        <option value="DC">DC</option>
+        <option value="DE">DE</option>
+        <option value="FL">FL</option>
+        <option value="GA">GA</option>
+        <option value="HI">HI</option>
+        <option value="IA">IA</option>
+        <option value="ID">ID</option>
+        <option value="IL">IL</option>
+        <option value="IN">IN</option>
+        <option value="KS">KS</option>
+        <option value="KY">KY</option>
+        <option value="LA">LA</option>
+        <option value="MA">MA</option>
+        <option value="MD">MD</option>
+        <option value="ME">ME</option>
+        <option value="MI">MI</option>
+        <option value="MN">MN</option>
+        <option value="MO">MO</option>
+        <option value="MP">MP</option>
+        <option value="MS">MS</option>
+        <option value="MT">MT</option>
+        <option value="NC">NC</option>
+        <option value="ND">ND</option>
+        <option value="NE">NE</option>
+        <option value="NH">NH</option>
+        <option value="NJ">NJ</option>
+        <option value="NM">NM</option>
+        <option value="NV">NV</option>
+        <option value="NY">NY</option>
+        <option value="OH">OH</option>
+        <option value="OK">OK</option>
+        <option value="OR">OR</option>
+        <option value="PA">PA</option>
+        <option value="RI">RI</option>
+        <option value="SC">SC</option>
+        <option value="SD">SD</option>
+        <option value="TN">TN</option>
+        <option value="TX">TX</option>
+        <option value="UT">UT</option>
+        <option value="VA">VA</option>
+        <option value="VT">VT</option>
+        <option value="WA">WA</option>
+        <option value="WI">WI</option>
+        <option value="WV">WV</option>
+        <option value="WY">WY</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="zip">Zip Code:</label>
+    <input  id="zip" maxlength="20" name="zip" size="20" type="text" required=true /><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="phone">Phone:</label>
+    <input  id="phone" maxlength="40" name="phone" size="20" type="text" required=true /><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="email">Email:</label>
+    <input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000001aH9I">Alternate Phone:</label>
+    <input  id="00N60000001aH9I" maxlength="40" name="00N60000001aH9I" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" /><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000001Xpo3">Utility:</label>
+    <select  id="00N60000001Xpo3" name="00N60000001Xpo3" title="Utility">
+        <option value="">--None--</option>
+        <option value="ACE">ACE</option>
+        <option value="Adams Electric Cooperative Inc">Adams Electric Cooperative Inc</option>
+        <option value="Alameda Municipal Power">Alameda Municipal Power</option>
+        <option value="Allegheny">Allegheny</option>
+        <option value="APS">APS</option>
+        <option value="APU">APU</option>
+        <option value="BG&amp;E">BG&amp;E</option>
+        <option value="Borough of Madison">Borough of Madison</option>
+        <option value="Borough of Park Ridge">Borough of Park Ridge</option>
+        <option value="Central Hudson">Central Hudson</option>
+        <option value="City of Chicopee">City of Chicopee</option>
+        <option value="City of Holyoke">City of Holyoke</option>
+        <option value="City of Norwood">City of Norwood</option>
+        <option value="City of Peabody">City of Peabody</option>
+        <option value="City of Russell">City of Russell</option>
+        <option value="City of Westfield">City of Westfield</option>
+        <option value="CL&amp;P">CL&amp;P</option>
+        <option value="Concord">Concord</option>
+        <option value="ConEdison">ConEdison</option>
+        <option value="Delmarva">Delmarva</option>
+        <option value="HECO">HECO</option>
+        <option value="HELCO">HELCO</option>
+        <option value="Hingham Municipal Lighting Plant">Hingham Municipal Lighting Plant</option>
+        <option value="Hull Municipal Light Plant">Hull Municipal Light Plant</option>
+        <option value="IREA">IREA</option>
+        <option value="JCP&amp;L">JCP&amp;L</option>
+        <option value="Kauai Utility">Kauai Utility</option>
+        <option value="KIUC">KIUC</option>
+        <option value="LADWP">LADWP</option>
+        <option value="LIPA">LIPA</option>
+        <option value="Littleton Electric Light and Water Department (Town of Littleton)">Littleton Electric Light and Water Department (Town of Littleton)</option>
+        <option value="Marblehead Municipal Light Department">Marblehead Municipal Light Department</option>
+        <option value="MECO">MECO</option>
+        <option value="Modesto Irrigation District">Modesto Irrigation District</option>
+        <option value="Nantucket Electric Co">Nantucket Electric Co</option>
+        <option value="National Grid">National Grid</option>
+        <option value="NSTAR">NSTAR</option>
+        <option value="NV Energy South">NV Energy South</option>
+        <option value="NYSE&amp;G">NYSE&amp;G</option>
+        <option value="O&amp;R">O&amp;R</option>
+        <option value="Other">Other</option>
+        <option value="Pacific Power">Pacific Power</option>
+        <option value="Pasadena">Pasadena</option>
+        <option value="PEPCO">PEPCO</option>
+        <option value="PG&amp;E">PG&amp;E</option>
+        <option value="Portland General Electric">Portland General Electric</option>
+        <option value="PPL">PPL</option>
+        <option value="PSE&amp;G">PSE&amp;G</option>
+        <option value="Rockland Electric">Rockland Electric</option>
+        <option value="Rowley Municipal Light Plant">Rowley Municipal Light Plant</option>
+        <option value="SCE">SCE</option>
+        <option value="SDG&amp;E">SDG&amp;E</option>
+        <option value="Shrewsbury Electric &amp; Cable Operations">Shrewsbury Electric &amp; Cable Operations</option>
+        <option value="SMECO">SMECO</option>
+        <option value="SMUD">SMUD</option>
+        <option value="SRP">SRP</option>
+        <option value="Sterling Municipal Light Department">Sterling Municipal Light Department</option>
+        <option value="Sussex Rural Electric Coop Inc">Sussex Rural Electric Coop Inc</option>
+        <option value="Taunton Municipal Lighting Plant">Taunton Municipal Lighting Plant</option>
+        <option value="TEP">TEP</option>
+        <option value="Town of Ashburnham">Town of Ashburnham</option>
+        <option value="Town of Belmont">Town of Belmont</option>
+        <option value="Town of Boylston">Town of Boylston</option>
+        <option value="Town of Braintree">Town of Braintree</option>
+        <option value="Town of Chester">Town of Chester</option>
+        <option value="Town of Concord">Town of Concord</option>
+        <option value="Town of Danvers">Town of Danvers</option>
+        <option value="Town of Groton">Town of Groton</option>
+        <option value="Town of Groveland">Town of Groveland</option>
+        <option value="Town of Holden">Town of Holden</option>
+        <option value="Town of Hudson">Town of Hudson</option>
+        <option value="Town of Ipswich">Town of Ipswich</option>
+        <option value="Town of Mansfield">Town of Mansfield</option>
+        <option value="Town of Merrimac">Town of Merrimac</option>
+        <option value="Town of Middleborough">Town of Middleborough</option>
+        <option value="Town of Middleton">Town of Middleton</option>
+        <option value="Town of North Attleborough">Town of North Attleborough</option>
+        <option value="Town of Paxton">Town of Paxton</option>
+        <option value="Town of Princeton">Town of Princeton</option>
+        <option value="Town of Reading">Town of Reading</option>
+        <option value="Town of South Hadley">Town of South Hadley</option>
+        <option value="Town of Templeton">Town of Templeton</option>
+        <option value="Town of Wakefield">Town of Wakefield</option>
+        <option value="Town of West Boylston">Town of West Boylston</option>
+        <option value="United Illuminating">United Illuminating</option>
+        <option value="United Power">United Power</option>
+        <option value="Unitil- Massachusetts (Fitchburg Gas and Electric Light Company)">Unitil- Massachusetts (Fitchburg Gas and Electric Light Company)</option>
+        <option value="Unknown">Unknown</option>
+        <option value="Vineland Municipal Electric Utility">Vineland Municipal Electric Utility</option>
+        <option value="Wellesley Municipal Light Plant">Wellesley Municipal Light Plant</option>
+        <option value="WMECO">WMECO</option>
+        <option value="XCEL">XCEL</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N600000036bLj">Usage Option:</label>
+    <select  id="00N600000036bLj" name="00N600000036bLj" title="Usage Option">
+        <option value="">--None--</option>
+        <option value="Basic">Basic</option>
+        <option value="Electric">Electric</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000002Y4UP">Best Way to Reach:</label>
+    <select  id="00N60000002Y4UP" name="00N60000002Y4UP" title="Best way to reach">
+        <option value="">--None--</option>
+        <option value="Mobile Number">Mobile Number</option>
+        <option value="Home Number">Home Number</option>
+    </select><br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pure-control-group">
+    <label for="00N60000002YF6i">Home Size:</label>
+    <input  id="00N60000002YF6i" name="00N60000002YF6i" size="20" type="text" /><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000002YgkG">Average Monthly Electric Bill ($):</label>
+    <input  id="00N60000002YgkG" name="00N60000002YgkG" size="20" type="text" required=true/><br>
+</div>
+
+
+<div class="pure-control-group">
+    <label for="00N60000002XAh6">Has HOA:</label>
+    <select  id="00N60000002XAh6" name="00N60000002XAh6" title="HOA">
+        <option value="">--None--</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000002Yfwp">Home Type:</label>
+    <select  id="00N60000002Yfwp" name="00N60000002Yfwp" title="Home Type" required=true >
+        <option value="Detached single family home">Detached single family home</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N600000036gj2">Notes:</label>
+    <textarea  id="00N600000036gj2" name="00N600000036gj2" rows="3" type="text" wrap="soft"></textarea><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000002XAhC">Verbally Confirmed Fico:</label>
+    <select  id="00N60000002XAhC" name="00N60000002XAhC" title="Verbally confirmed FICO">
+        <option value="">--None--</option>
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
+        <option value="Don&#39;t Know">Don&#39;t Know</option>
+        <option value="Did Not Ask">Did Not Ask</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000002YDag">Channel:</label>
+    <select  id="00N60000002YDag" name="00N60000002YDag" title="Channel" required=true>
+        <option value="Telemarketing">Telemarketing</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000002YDal">Lead Source:</label>
+    <select  id="00N60000002YDal" name="00N60000002YDal" title="Lead Source" required=true>
+        <option value="Telemarketing: Phonewear">Telemarketing: Phonewear</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N600000036u33">Roof Orientation:</label>
+    <select  id="00N600000036u33" name="00N600000036u33" title="Roof Orientation">
+    <option value="">--None--</option>
+        <option value="S">S</option>
+        <option value="SE/SW">SE/SW</option>
+        <option value="E/W">E/W</option>
+        <option value="NE/NW">NE/NW</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000001ZIPh">Shading:</label>
+    <select  id="00N60000001ZIPh" name="00N60000001ZIPh" title="Shading">
+        <option value="None">None</option>
+        <option value="Light">Light</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Heavy">Heavy</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000001b8IP">Other Decision Maker:</label>
+    <input  id="00N60000001b8IP" maxlength="30" name="00N60000001b8IP" size="20" type="text" /><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N60000002YS6l">Lead Stage:</label>
+    <select  id="00N60000002YS6l" name="00N60000002YS6l" title="Lead Status" required=true>
+        <option value="Created">Created</option>
+    </select><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N6000000375eP">Auto-dialer Opt-in:</label>
+    <input  id="00N6000000375eP" name="00N6000000375eP" type="checkbox" value="1" checked /><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N600000036nza">Partner Lead Id:</label>
+    <input  id="00N600000036nza" maxlength="50" name="00N600000036nza" size="20" type="text" required=true/><br>
+</div>
+
+<div class="pure-control-group">
+    <label for="00N600000036nzf">External Source:</label>
+    <select  id="00N600000036nzf" name="00N600000036nzf" size="1" type="text" ><option value="Phoneware">Phoneware</option></select ><br>
+</div>
+
+<div class="pure-controls">
+    <input class="pure-button pure-button-primary" type="submit" name="submit">
+</div>
+
+</form>
+
+
+<script type="text/javascript">
+    'use strict';
+    console.log('RUNNING');
+
+    if (window.location.search) {
+        var data = parseQString();
+        console.log(data);
+        data.first_name = 'Gustavo';
+
+        if (data.first_name) {
+            document.querySelector('#first_name').value = data.first_name;
+        }
+
+        if (data.last_name) {
+            document.querySelector('#last_name').value = data.last_name;
+        }
+
+        if (data.address1) {
+            document.querySelector('#street').value = data.address1;
+        }
+    }
+
+    function parseQString() {
+        var data = {};
+        var string = window.location.search.split('&');
+        string[0] = string[0].split('?')[1];
+
+        for (var i = string.length - 1; i >= 0; i--) {
+            var item = string[i].split('=');
+            data[item[0]] = item[1];
+        }
+
+        return data;
+    }
+</script>
+
+</body>
+</html>
